@@ -1,0 +1,21 @@
+spartanStuff:
+	tiers:
+		"spartanfire:fire_dragonbone", "spartanfire:ice_dragonbone", "spartanfire:dragonbone", 
+		"spartanweaponry:diamond", "spartanweaponry:steel", "spartanweaponry:iron", 
+		"spartandefiled:umbrium", "spartanweaponry:bronze", "spartanweaponry:silver",
+		"spartanweaponry:stone", "spartanweaponry:gold", "spartanweaponry:wood",
+		"spartanfire:desert_venom", "spartanfire:jungle_venom", "spartanfire:desert", "spartanfire:jungle"
+
+	weapons:
+		melee:
+			"halberd", "battleaxe", "hammer", "warhammer", "staff", "pike", "spear", "glaive", "longsword",
+			"katana", "greatsword", "saber", "mace", "dagger", "lance", "rapier"
+		
+		ranged:
+			"longbow", "crossbow",
+			"throwing_axe", "javelin", "throwing_knife", "dagger",
+			"boomerang",
+		
+		special:
+			club_wood
+			club_studded
