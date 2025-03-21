@@ -294,8 +294,8 @@
 					<rapierJungle id="spartanfire:rapier_jungle"/>
 				</rapier>
 				<sword>
-					<ironSword id="iron_sword"/>
 					<diamondSword id="diamond_sword"/>
+					<ironSword id="iron_sword"/>
 					<stoneSword id="stone_sword"/>
 					<goldSword id="golden_sword"/>
 					<woodSword id="wooden_sword"/>
@@ -456,12 +456,19 @@
 		</rangedWeapons>
 		<heals>
 			<scalingHealth>
+				<medkit id="scalinghealth:healingitem" damage="1"/>
+				<bandages id="scalinghealth:healingitem" damage="0"/>
 			</scalingHealth>
 			<firstaid>
 				<bandage id="firstaid:bandage"/>
 				<plaster id="firstaid:plaster"/>
 				<morphine id="firstaid:morphine"/>
 			</firstaid>
+			<craftable>
+				<wool id="minecraft:wool"/>
+				<string id="minecraft:string"/>
+				<plantString id="notreepunching:grass_string"/>
+			</craftable>
 		</heals>
 		<clutch>
 			<enderPearl id="minecraft:ender_pearl"/>
@@ -488,9 +495,11 @@
 				<grapes id="rustic:grapes"/>
 				<ironBerries id="rustic:ironberries"/>
 			</berries>
-			<badFood>
+			<badFoods>
 				<rottenFlesh id="minecraft:rotten_flesh"/>				
-			</badFood>
+			</badFoods>
+			<harmfulFoods>
+			</harmfulFoods>
 		</foods>
 		<sleep>
 			<sleepingBag id="comforts:sleeping_bag"/>
@@ -519,10 +528,11 @@
 					<grayShulkerBox id="minecraft:gray_shulker_box"/>
 					<blackShulkerBox id="minecraft:black_shulker_box"/>
 				</shulkerBoxes>
-				
 				<chest id="minecraft:chest"/>
 			</storage>
+			<craftingTable id="minecraft:crafting_table"/>
 			<bookAndQuill id="writable_book"/>
+			<torch id="minecraft:torch"/>
 		</usefulItems>
 		<earlyGame>
 			<heating>
@@ -544,28 +554,9 @@
 
     <equipment>
         <weapon>
-            <sword>
-                <sword class="ItemSword"/>
-                <ironSword id="iron_sword"/>
-                <diamondSword id="diamond_sword"/>
-                <stoneSword id="stone_sword"/>
-                <goldSword id="golden_sword"/>
-                <woodSword id="wooden_sword"/>
-            </sword>
             <shield class="Item" data="{isShield : &quot;true&quot;}">
                 <shield id="shield" mergePrevious="true"/>
             </shield>
-            <munition>
-                <bow class="ItemBow">
-                    <bow id="bow" mergePrevious="true"/>
-                </bow>
-                <arrow class="arrow">
-                    <arrow id="arrow"/>
-                </arrow>
-                <spectralArrow id="spectral_arrow"/>
-                <tippedArrow id="tipped_arrow"/>
-                <snowball id="snowball"/>
-            </munition>
         </weapon>
         <tool>
             <pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}">
@@ -1066,7 +1057,6 @@
                 <activatorRails id="activator_rail"/>
             </rails>
             <lighting>
-                <torch id="torch"/>
                 <lamp id="redstone_lamp"/>
                 <redstoneLamp id="redstone_lamp"/>
                 <lamp id="lit_redstone_lamp"/>
@@ -1229,33 +1219,6 @@
     </resources>
     <item>
         <utility>
-            <torch id="torch"/>
-            <endRod id="end_rod"/>
-            <flintAndSteel id="flint_and_steel"/>
-            <craftingTable id="crafting_table"/>
-            <furnace id="furnace"/>
-            <furnaceBurning id="lit_furnace"/>
-            <chests>
-                <chest id="chest"/>
-                <chest id="trapped_chest"/>
-                <enderChest id="ender_chest"/>
-                <whiteShulkerBox id="white_shulker_box"/>
-                <blackShulkerBox id="black_shulker_box"/>
-                <redShulkerBox id="red_shulker_box"/>
-                <greenShulkerBox id="green_shulker_box"/>
-                <brownShulkerBox id="brown_shulker_box"/>
-                <blueShulkerBox id="blue_shulker_box"/>
-                <purpleShulkerBox id="purple_shulker_box"/>
-                <cyanShulkerBox id="cyan_shulker_box"/>
-                <silverShulkerBox id="silver_shulker_box"/>
-                <grayShulkerBox id="gray_shulker_box"/>
-                <pinkShulkerBox id="pink_shulker_box"/>
-                <limeShulkerBox id="lime_shulker_box"/>
-                <yellowShulkerBox id="yellow_shulker_box"/>
-                <lightBlueShulkerBox id="light_blue_shulker_box"/>
-                <magentaShulkerBox id="magenta_shulker_box"/>
-                <orangeShulkerBox id="orange_shulker_box"/>
-            </chests>
             <beacon id="beacon"/>
             <anvil id="anvil"/>
             <jukebox id="jukebox"/>
