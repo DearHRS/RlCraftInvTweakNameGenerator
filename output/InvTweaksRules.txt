@@ -5,21 +5,21 @@
 
 ====== [ SETTINGS ] ======
 
-D1-C1 meleeWeapon
-D2-C2 bows
-D3 tool
-D4 gtfo
-D5-B5 firstaid
-D7-A6 usefulItems
-D6 foods
-D8-A8 block
-D9-C9 clutch
-
 A1-A4 earlyGame
 A5 shield
 
 B1 earplugs
-C5 sleep
+B5 sleep
+
+D1-C1 meleeWeapon
+D2-C2 bows
+D3 tool
+D4 gtfo
+D5-C5 firstaid
+D6 foods
+D7-A7 usefulItems
+D8 block
+D9-C9 clutch
 
 ======== [ GETTING STARTED ] ========
 

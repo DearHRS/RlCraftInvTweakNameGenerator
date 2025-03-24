@@ -1,21 +1,23 @@
 #include <iostream>
-#include "WeaponNameGenerator.h"
+#include "XMLGenerator.h"
+#include "FileReadWriter.h"
 
 int main()
 {
-    /*while (true) {
+    /*to do:
 
+    text parser 
+        + ignore comments, 
+        get mod, 
+        get item, 
+        get tier, 
+        get formula
 
+    run formula in xml generator*/
 
-        std::cout << "stop generation?(y/n)\n";
-        std::string givenAnswer;
-        std::getline(std::cin, givenAnswer);
-        if (givenAnswer.compare("y") == 0) {
-            break;
-        }
-    }*/
-    WeaponNameGenerator names;
-    
-    names.GenerateMelee();
-    names.GenerateRanged();
+    std::vector<std::string> fileData = FileReadWriter::GetFile("xmlOutput.txt");
+
+    for (int i = 0; i < fileData.size(); i++) {
+        std::cout << fileData[i] << "\n";
+    }
 }

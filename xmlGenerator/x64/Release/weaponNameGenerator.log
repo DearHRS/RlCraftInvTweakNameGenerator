@@ -1,0 +1,8 @@
+﻿  FileReadWriter.cpp
+  main.cpp
+  XMLGenerator.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 238 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  weaponNameGenerator.vcxproj -> C:\#dummy\programmingProjects\weaponNameGenerator\x64\Release\xmlGenerator.exe

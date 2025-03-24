@@ -1,0 +1,14 @@
+/*
+to add comments or notes to the output notepad use 
+'/*' to start comment block and '*/' to stop comment 
+block on separate lines much like this example
+
+
+*/
+
+{
+mod = spartanFire
+itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
+tier = [firedragonbone, icedragonbone, dragonbone, desert_poison, jungle_poison, desert, jungle]
+tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
+}
