@@ -98,3 +98,33 @@ std::vector<std::vector<int>> TextEditor::GetCategoriesPosition(std::vector<std:
 
 	return posVector;
 }
+
+std::string TextEditor::GetLowerCase(std::string givenString)
+{
+	std::string lowerCased = "";
+
+	for (int i = 0; i < givenString.size(); i++) {
+		char currentChar = givenString[i];
+
+		if ((currentChar >= 65) && (currentChar <= 90)) {
+			currentChar += 32;
+		}
+
+		lowerCased += currentChar;
+	}
+
+	return lowerCased;
+}
+
+std::string TextEditor::GetShortForm(std::string givenString)
+{
+	std::string shortForm = "";
+
+	for (int i = 0; i < givenString.size(); i++) {
+		if ((givenString[i] >= 65) && (givenString[i] <= 90)) {
+			shortForm += givenString[i];
+		}
+	}
+
+	return shortForm;
+}

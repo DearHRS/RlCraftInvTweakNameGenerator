@@ -9,13 +9,11 @@ XMLGenerator::XMLGenerator(std::vector<std::string> rawFileData)
 			rawFileData.begin() + categoriesPosition[a][0],
 			rawFileData.begin() + categoriesPosition[a][1] + 1
 		);
-		std::string itemValue = TextEditor::GetParameterValue(rawCategory, "itemName = ");
-		std::string tierValue = TextEditor::GetParameterValue(rawCategory, "tier = ");
 		categories.push_back(
 			{
 				TextEditor::GetParameterValue(rawCategory, "mod = "),
-				TextEditor::GetVector(itemValue.substr(1, itemValue.size() - 2), ','),
-				TextEditor::GetVector(tierValue.substr(1, tierValue.size() - 2), ',')
+				TextEditor::GetVector(TextEditor::GetParameterValue(rawCategory, "items = "), ','),
+				TextEditor::GetVector(TextEditor::GetParameterValue(rawCategory, "tiers = "), ',')
 			}
 		);
 	}
@@ -26,25 +24,29 @@ std::vector<std::string> XMLGenerator::Generate()
 	std::vector<std::string> returnVector;
 
 	for (int a = 0; a < categories.size(); a++) {
-		returnVector.push_back("<" + categories[a].mod + ">");
+		std::string currentMod = categories[a].mod;
+		returnVector.push_back("<" + currentMod + ">");
 
 		for (int b = 0; b < categories[a].items.size(); b++) {
-			returnVector.push_back("\t<" + categories[a].items[b] + ">");
+			std::string currentItem = categories[a].items[b];
+			returnVector.push_back("\t<" + currentItem + ">");
 
 			for (int c = 0; c < categories[a].tiers.size(); c++) {
+				std::string currentTier = categories[a].tiers[c];
+
 				returnVector.push_back(
-					"\t\t<" + 
-					categories[a].items[b] + categories[a].tiers[c] +
-					" id=\"" + categories[a].mod + ":" + categories[a].items[b] +
-					"_" + categories[a].tiers[c] +
+					"\t\t<" + currentItem + 
+					TextEditor::RemoveChar(currentTier, '_') + TextEditor::GetShortForm(currentMod) +
+					" id=\"" + TextEditor::GetLowerCase(currentMod) + ":" + 
+					TextEditor::GetLowerCase(currentItem) + "_" + TextEditor::GetLowerCase(currentTier) +
 					"\"/>"
 				);
 			}
 
-			returnVector.push_back("\t</" + categories[a].items[b] + ">");
+			returnVector.push_back("\t</" + currentItem + ">");
 		}
 
-		returnVector.push_back("</" + categories[a].mod + ">");
+		returnVector.push_back("</" + currentMod + ">");
 	}
 
 	return returnVector;

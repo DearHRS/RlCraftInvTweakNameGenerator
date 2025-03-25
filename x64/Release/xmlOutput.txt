@@ -3,12 +3,47 @@ to add comments or notes to the output notepad use
 '/*' to start comment block and '*/' to stop comment 
 block on separate lines much like this example
 
+unused idea tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
 
+this should work
+*/
+/*
+{
+mod = SpartanFire
+items = halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier
+tiers = Fire_DragonBone, Ice_dragonbone, DragonBone, Desert_Poison, Jungle_Poison, Desert, Jungle
+}
+
+{
+mod = SpartanWeaponry
+items = halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier
+tiers = Diamond, Steel, Iron, Bronze, Silver, Stone, Gold, Wood
+}
 */
 
 {
-mod = spartanFire
-itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
-tier = [firedragonbone, icedragonbone, dragonbone, desert_poison, jungle_poison, desert, jungle]
-tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
+mod = RoughTweaks
+items = salve, plaster, bandage, medikit, medikitenchanted
+tiers =  
 }
+
+
+/* data generated on 16:44 25 3 2025
+<RoughTweaks>
+	<salve>
+		<salveRT id="roughtweaks:salve_"/>
+	</salve>
+	<plaster>
+		<plasterRT id="roughtweaks:plaster_"/>
+	</plaster>
+	<bandage>
+		<bandageRT id="roughtweaks:bandage_"/>
+	</bandage>
+	<medikit>
+		<medikitRT id="roughtweaks:medikit_"/>
+	</medikit>
+	<medikitenchanted>
+		<medikitenchantedRT id="roughtweaks:medikitenchanted_"/>
+	</medikitenchanted>
+</RoughTweaks>
+*/
