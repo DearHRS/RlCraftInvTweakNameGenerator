@@ -2,23 +2,27 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "TextEditor.h"
 
 class XMLGenerator
 {
+	struct Category {
+		std::string mod;
+		std::vector<std::string> items;
+		std::vector<std::string> tiers;
+	};
+
 private:
-	//std::vector<Category> categories;
-	
-	std::string GetMod(std::vector<std::string>& rawData);
-	std::vector<std::string> GetItems(std::vector<std::string>& rawData);
-	std::vector<std::string> GetTiers(std::vector<std::string>& rawData);
+	std::vector<Category> categories;
 
 public:
 	XMLGenerator(std::vector<std::string> rawFileData);
-	void Generate(std::vector<std::string>& weapons, std::vector<std::string>& tiers);
+
+	/*
+	generates xml entires
+	mod as category
+	itemTier as item name
+	*/
+	std::vector<std::string> Generate();
 };
 
-struct Category{
-	std::string mod;
-	std::vector<std::string> tiers;
-	std::vector<std::string> items;
-};

@@ -5,8 +5,6 @@
 #include <time.h>
 #include "TextEditor.h"
 
-#include <iostream>
-
 class FileReadWriter
 {
 private:

@@ -38,7 +38,7 @@ void FileReadWriter::WriteFile(std::string filePath, std::vector<std::string>& u
     t = time(NULL);
     localtime_s(&timeStruct, &t);
 
-    givenFile << "/* data generated at " << timeStruct.tm_hour << ":" << timeStruct.tm_min << " " << 
+    givenFile << "\n\n/* data generated on " << timeStruct.tm_hour << ":" << timeStruct.tm_min << " " << 
         timeStruct.tm_mday + timeStruct.tm_isdst << " " << timeStruct.tm_mon + 1 << " " << 
         timeStruct.tm_year + 1900 << "\n";
     

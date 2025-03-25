@@ -7,8 +7,15 @@ block on separate lines much like this example
 this should work*/
 
 {
-mod = spartanFire
+mod = spartanfire
 itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
 tier = [firedragonbone, icedragonbone, dragonbone, desert_poison, jungle_poison, desert, jungle]
+tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
+}
+
+{
+mod = spartanweaponry
+itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
+tier = [diamond, steel, iron, bronze, silver, stone, gold, wood]
 tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
 }

@@ -1,0 +1,330 @@
+/*
+to add comments or notes to the output notepad use 
+'/*' to start comment block and '*/' to stop comment 
+block on separate lines much like this example
+
+
+this should work*/
+
+{
+mod = spartanfire
+itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
+tier = [firedragonbone, icedragonbone, dragonbone, desert_poison, jungle_poison, desert, jungle]
+tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
+}
+
+{
+mod = spartanweaponry
+itemName = [halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier]
+tier = [diamond, steel, iron, bronze, silver, stone, gold, wood]
+tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
+}/* data generated at 6:18 25 3 2025
+<spartanfire>
+	<halberd>
+		<halberdfiredragonbone id="spartanfire:halberd_firedragonbone"/>
+		<halberdicedragonbone id="spartanfire:halberd_icedragonbone"/>
+		<halberddragonbone id="spartanfire:halberd_dragonbone"/>
+		<halberddesert_poison id="spartanfire:halberd_desert_poison"/>
+		<halberdjungle_poison id="spartanfire:halberd_jungle_poison"/>
+		<halberddesert id="spartanfire:halberd_desert"/>
+		<halberdjungle id="spartanfire:halberd_jungle"/>
+	</halberd>
+	<battleaxe>
+		<battleaxefiredragonbone id="spartanfire:battleaxe_firedragonbone"/>
+		<battleaxeicedragonbone id="spartanfire:battleaxe_icedragonbone"/>
+		<battleaxedragonbone id="spartanfire:battleaxe_dragonbone"/>
+		<battleaxedesert_poison id="spartanfire:battleaxe_desert_poison"/>
+		<battleaxejungle_poison id="spartanfire:battleaxe_jungle_poison"/>
+		<battleaxedesert id="spartanfire:battleaxe_desert"/>
+		<battleaxejungle id="spartanfire:battleaxe_jungle"/>
+	</battleaxe>
+	<hammer>
+		<hammerfiredragonbone id="spartanfire:hammer_firedragonbone"/>
+		<hammericedragonbone id="spartanfire:hammer_icedragonbone"/>
+		<hammerdragonbone id="spartanfire:hammer_dragonbone"/>
+		<hammerdesert_poison id="spartanfire:hammer_desert_poison"/>
+		<hammerjungle_poison id="spartanfire:hammer_jungle_poison"/>
+		<hammerdesert id="spartanfire:hammer_desert"/>
+		<hammerjungle id="spartanfire:hammer_jungle"/>
+	</hammer>
+	<warhammer>
+		<warhammerfiredragonbone id="spartanfire:warhammer_firedragonbone"/>
+		<warhammericedragonbone id="spartanfire:warhammer_icedragonbone"/>
+		<warhammerdragonbone id="spartanfire:warhammer_dragonbone"/>
+		<warhammerdesert_poison id="spartanfire:warhammer_desert_poison"/>
+		<warhammerjungle_poison id="spartanfire:warhammer_jungle_poison"/>
+		<warhammerdesert id="spartanfire:warhammer_desert"/>
+		<warhammerjungle id="spartanfire:warhammer_jungle"/>
+	</warhammer>
+	<staff>
+		<stafffiredragonbone id="spartanfire:staff_firedragonbone"/>
+		<stafficedragonbone id="spartanfire:staff_icedragonbone"/>
+		<staffdragonbone id="spartanfire:staff_dragonbone"/>
+		<staffdesert_poison id="spartanfire:staff_desert_poison"/>
+		<staffjungle_poison id="spartanfire:staff_jungle_poison"/>
+		<staffdesert id="spartanfire:staff_desert"/>
+		<staffjungle id="spartanfire:staff_jungle"/>
+	</staff>
+	<pike>
+		<pikefiredragonbone id="spartanfire:pike_firedragonbone"/>
+		<pikeicedragonbone id="spartanfire:pike_icedragonbone"/>
+		<pikedragonbone id="spartanfire:pike_dragonbone"/>
+		<pikedesert_poison id="spartanfire:pike_desert_poison"/>
+		<pikejungle_poison id="spartanfire:pike_jungle_poison"/>
+		<pikedesert id="spartanfire:pike_desert"/>
+		<pikejungle id="spartanfire:pike_jungle"/>
+	</pike>
+	<spear>
+		<spearfiredragonbone id="spartanfire:spear_firedragonbone"/>
+		<spearicedragonbone id="spartanfire:spear_icedragonbone"/>
+		<speardragonbone id="spartanfire:spear_dragonbone"/>
+		<speardesert_poison id="spartanfire:spear_desert_poison"/>
+		<spearjungle_poison id="spartanfire:spear_jungle_poison"/>
+		<speardesert id="spartanfire:spear_desert"/>
+		<spearjungle id="spartanfire:spear_jungle"/>
+	</spear>
+	<glaive>
+		<glaivefiredragonbone id="spartanfire:glaive_firedragonbone"/>
+		<glaiveicedragonbone id="spartanfire:glaive_icedragonbone"/>
+		<glaivedragonbone id="spartanfire:glaive_dragonbone"/>
+		<glaivedesert_poison id="spartanfire:glaive_desert_poison"/>
+		<glaivejungle_poison id="spartanfire:glaive_jungle_poison"/>
+		<glaivedesert id="spartanfire:glaive_desert"/>
+		<glaivejungle id="spartanfire:glaive_jungle"/>
+	</glaive>
+	<longsword>
+		<longswordfiredragonbone id="spartanfire:longsword_firedragonbone"/>
+		<longswordicedragonbone id="spartanfire:longsword_icedragonbone"/>
+		<longsworddragonbone id="spartanfire:longsword_dragonbone"/>
+		<longsworddesert_poison id="spartanfire:longsword_desert_poison"/>
+		<longswordjungle_poison id="spartanfire:longsword_jungle_poison"/>
+		<longsworddesert id="spartanfire:longsword_desert"/>
+		<longswordjungle id="spartanfire:longsword_jungle"/>
+	</longsword>
+	<katana>
+		<katanafiredragonbone id="spartanfire:katana_firedragonbone"/>
+		<katanaicedragonbone id="spartanfire:katana_icedragonbone"/>
+		<katanadragonbone id="spartanfire:katana_dragonbone"/>
+		<katanadesert_poison id="spartanfire:katana_desert_poison"/>
+		<katanajungle_poison id="spartanfire:katana_jungle_poison"/>
+		<katanadesert id="spartanfire:katana_desert"/>
+		<katanajungle id="spartanfire:katana_jungle"/>
+	</katana>
+	<greatsword>
+		<greatswordfiredragonbone id="spartanfire:greatsword_firedragonbone"/>
+		<greatswordicedragonbone id="spartanfire:greatsword_icedragonbone"/>
+		<greatsworddragonbone id="spartanfire:greatsword_dragonbone"/>
+		<greatsworddesert_poison id="spartanfire:greatsword_desert_poison"/>
+		<greatswordjungle_poison id="spartanfire:greatsword_jungle_poison"/>
+		<greatsworddesert id="spartanfire:greatsword_desert"/>
+		<greatswordjungle id="spartanfire:greatsword_jungle"/>
+	</greatsword>
+	<saber>
+		<saberfiredragonbone id="spartanfire:saber_firedragonbone"/>
+		<sabericedragonbone id="spartanfire:saber_icedragonbone"/>
+		<saberdragonbone id="spartanfire:saber_dragonbone"/>
+		<saberdesert_poison id="spartanfire:saber_desert_poison"/>
+		<saberjungle_poison id="spartanfire:saber_jungle_poison"/>
+		<saberdesert id="spartanfire:saber_desert"/>
+		<saberjungle id="spartanfire:saber_jungle"/>
+	</saber>
+	<mace>
+		<macefiredragonbone id="spartanfire:mace_firedragonbone"/>
+		<maceicedragonbone id="spartanfire:mace_icedragonbone"/>
+		<macedragonbone id="spartanfire:mace_dragonbone"/>
+		<macedesert_poison id="spartanfire:mace_desert_poison"/>
+		<macejungle_poison id="spartanfire:mace_jungle_poison"/>
+		<macedesert id="spartanfire:mace_desert"/>
+		<macejungle id="spartanfire:mace_jungle"/>
+	</mace>
+	<dagger>
+		<daggerfiredragonbone id="spartanfire:dagger_firedragonbone"/>
+		<daggericedragonbone id="spartanfire:dagger_icedragonbone"/>
+		<daggerdragonbone id="spartanfire:dagger_dragonbone"/>
+		<daggerdesert_poison id="spartanfire:dagger_desert_poison"/>
+		<daggerjungle_poison id="spartanfire:dagger_jungle_poison"/>
+		<daggerdesert id="spartanfire:dagger_desert"/>
+		<daggerjungle id="spartanfire:dagger_jungle"/>
+	</dagger>
+	<lance>
+		<lancefiredragonbone id="spartanfire:lance_firedragonbone"/>
+		<lanceicedragonbone id="spartanfire:lance_icedragonbone"/>
+		<lancedragonbone id="spartanfire:lance_dragonbone"/>
+		<lancedesert_poison id="spartanfire:lance_desert_poison"/>
+		<lancejungle_poison id="spartanfire:lance_jungle_poison"/>
+		<lancedesert id="spartanfire:lance_desert"/>
+		<lancejungle id="spartanfire:lance_jungle"/>
+	</lance>
+	<rapier>
+		<rapierfiredragonbone id="spartanfire:rapier_firedragonbone"/>
+		<rapiericedragonbone id="spartanfire:rapier_icedragonbone"/>
+		<rapierdragonbone id="spartanfire:rapier_dragonbone"/>
+		<rapierdesert_poison id="spartanfire:rapier_desert_poison"/>
+		<rapierjungle_poison id="spartanfire:rapier_jungle_poison"/>
+		<rapierdesert id="spartanfire:rapier_desert"/>
+		<rapierjungle id="spartanfire:rapier_jungle"/>
+	</rapier>
+</spartanfire>
+<spartanweaponry>
+	<halberd>
+		<halberddiamond id="spartanweaponry:halberd_diamond"/>
+		<halberdsteel id="spartanweaponry:halberd_steel"/>
+		<halberdiron id="spartanweaponry:halberd_iron"/>
+		<halberdbronze id="spartanweaponry:halberd_bronze"/>
+		<halberdsilver id="spartanweaponry:halberd_silver"/>
+		<halberdstone id="spartanweaponry:halberd_stone"/>
+		<halberdgold id="spartanweaponry:halberd_gold"/>
+		<halberdwood id="spartanweaponry:halberd_wood"/>
+	</halberd>
+	<battleaxe>
+		<battleaxediamond id="spartanweaponry:battleaxe_diamond"/>
+		<battleaxesteel id="spartanweaponry:battleaxe_steel"/>
+		<battleaxeiron id="spartanweaponry:battleaxe_iron"/>
+		<battleaxebronze id="spartanweaponry:battleaxe_bronze"/>
+		<battleaxesilver id="spartanweaponry:battleaxe_silver"/>
+		<battleaxestone id="spartanweaponry:battleaxe_stone"/>
+		<battleaxegold id="spartanweaponry:battleaxe_gold"/>
+		<battleaxewood id="spartanweaponry:battleaxe_wood"/>
+	</battleaxe>
+	<hammer>
+		<hammerdiamond id="spartanweaponry:hammer_diamond"/>
+		<hammersteel id="spartanweaponry:hammer_steel"/>
+		<hammeriron id="spartanweaponry:hammer_iron"/>
+		<hammerbronze id="spartanweaponry:hammer_bronze"/>
+		<hammersilver id="spartanweaponry:hammer_silver"/>
+		<hammerstone id="spartanweaponry:hammer_stone"/>
+		<hammergold id="spartanweaponry:hammer_gold"/>
+		<hammerwood id="spartanweaponry:hammer_wood"/>
+	</hammer>
+	<warhammer>
+		<warhammerdiamond id="spartanweaponry:warhammer_diamond"/>
+		<warhammersteel id="spartanweaponry:warhammer_steel"/>
+		<warhammeriron id="spartanweaponry:warhammer_iron"/>
+		<warhammerbronze id="spartanweaponry:warhammer_bronze"/>
+		<warhammersilver id="spartanweaponry:warhammer_silver"/>
+		<warhammerstone id="spartanweaponry:warhammer_stone"/>
+		<warhammergold id="spartanweaponry:warhammer_gold"/>
+		<warhammerwood id="spartanweaponry:warhammer_wood"/>
+	</warhammer>
+	<staff>
+		<staffdiamond id="spartanweaponry:staff_diamond"/>
+		<staffsteel id="spartanweaponry:staff_steel"/>
+		<staffiron id="spartanweaponry:staff_iron"/>
+		<staffbronze id="spartanweaponry:staff_bronze"/>
+		<staffsilver id="spartanweaponry:staff_silver"/>
+		<staffstone id="spartanweaponry:staff_stone"/>
+		<staffgold id="spartanweaponry:staff_gold"/>
+		<staffwood id="spartanweaponry:staff_wood"/>
+	</staff>
+	<pike>
+		<pikediamond id="spartanweaponry:pike_diamond"/>
+		<pikesteel id="spartanweaponry:pike_steel"/>
+		<pikeiron id="spartanweaponry:pike_iron"/>
+		<pikebronze id="spartanweaponry:pike_bronze"/>
+		<pikesilver id="spartanweaponry:pike_silver"/>
+		<pikestone id="spartanweaponry:pike_stone"/>
+		<pikegold id="spartanweaponry:pike_gold"/>
+		<pikewood id="spartanweaponry:pike_wood"/>
+	</pike>
+	<spear>
+		<speardiamond id="spartanweaponry:spear_diamond"/>
+		<spearsteel id="spartanweaponry:spear_steel"/>
+		<speariron id="spartanweaponry:spear_iron"/>
+		<spearbronze id="spartanweaponry:spear_bronze"/>
+		<spearsilver id="spartanweaponry:spear_silver"/>
+		<spearstone id="spartanweaponry:spear_stone"/>
+		<speargold id="spartanweaponry:spear_gold"/>
+		<spearwood id="spartanweaponry:spear_wood"/>
+	</spear>
+	<glaive>
+		<glaivediamond id="spartanweaponry:glaive_diamond"/>
+		<glaivesteel id="spartanweaponry:glaive_steel"/>
+		<glaiveiron id="spartanweaponry:glaive_iron"/>
+		<glaivebronze id="spartanweaponry:glaive_bronze"/>
+		<glaivesilver id="spartanweaponry:glaive_silver"/>
+		<glaivestone id="spartanweaponry:glaive_stone"/>
+		<glaivegold id="spartanweaponry:glaive_gold"/>
+		<glaivewood id="spartanweaponry:glaive_wood"/>
+	</glaive>
+	<longsword>
+		<longsworddiamond id="spartanweaponry:longsword_diamond"/>
+		<longswordsteel id="spartanweaponry:longsword_steel"/>
+		<longswordiron id="spartanweaponry:longsword_iron"/>
+		<longswordbronze id="spartanweaponry:longsword_bronze"/>
+		<longswordsilver id="spartanweaponry:longsword_silver"/>
+		<longswordstone id="spartanweaponry:longsword_stone"/>
+		<longswordgold id="spartanweaponry:longsword_gold"/>
+		<longswordwood id="spartanweaponry:longsword_wood"/>
+	</longsword>
+	<katana>
+		<katanadiamond id="spartanweaponry:katana_diamond"/>
+		<katanasteel id="spartanweaponry:katana_steel"/>
+		<katanairon id="spartanweaponry:katana_iron"/>
+		<katanabronze id="spartanweaponry:katana_bronze"/>
+		<katanasilver id="spartanweaponry:katana_silver"/>
+		<katanastone id="spartanweaponry:katana_stone"/>
+		<katanagold id="spartanweaponry:katana_gold"/>
+		<katanawood id="spartanweaponry:katana_wood"/>
+	</katana>
+	<greatsword>
+		<greatsworddiamond id="spartanweaponry:greatsword_diamond"/>
+		<greatswordsteel id="spartanweaponry:greatsword_steel"/>
+		<greatswordiron id="spartanweaponry:greatsword_iron"/>
+		<greatswordbronze id="spartanweaponry:greatsword_bronze"/>
+		<greatswordsilver id="spartanweaponry:greatsword_silver"/>
+		<greatswordstone id="spartanweaponry:greatsword_stone"/>
+		<greatswordgold id="spartanweaponry:greatsword_gold"/>
+		<greatswordwood id="spartanweaponry:greatsword_wood"/>
+	</greatsword>
+	<saber>
+		<saberdiamond id="spartanweaponry:saber_diamond"/>
+		<sabersteel id="spartanweaponry:saber_steel"/>
+		<saberiron id="spartanweaponry:saber_iron"/>
+		<saberbronze id="spartanweaponry:saber_bronze"/>
+		<sabersilver id="spartanweaponry:saber_silver"/>
+		<saberstone id="spartanweaponry:saber_stone"/>
+		<sabergold id="spartanweaponry:saber_gold"/>
+		<saberwood id="spartanweaponry:saber_wood"/>
+	</saber>
+	<mace>
+		<macediamond id="spartanweaponry:mace_diamond"/>
+		<macesteel id="spartanweaponry:mace_steel"/>
+		<maceiron id="spartanweaponry:mace_iron"/>
+		<macebronze id="spartanweaponry:mace_bronze"/>
+		<macesilver id="spartanweaponry:mace_silver"/>
+		<macestone id="spartanweaponry:mace_stone"/>
+		<macegold id="spartanweaponry:mace_gold"/>
+		<macewood id="spartanweaponry:mace_wood"/>
+	</mace>
+	<dagger>
+		<daggerdiamond id="spartanweaponry:dagger_diamond"/>
+		<daggersteel id="spartanweaponry:dagger_steel"/>
+		<daggeriron id="spartanweaponry:dagger_iron"/>
+		<daggerbronze id="spartanweaponry:dagger_bronze"/>
+		<daggersilver id="spartanweaponry:dagger_silver"/>
+		<daggerstone id="spartanweaponry:dagger_stone"/>
+		<daggergold id="spartanweaponry:dagger_gold"/>
+		<daggerwood id="spartanweaponry:dagger_wood"/>
+	</dagger>
+	<lance>
+		<lancediamond id="spartanweaponry:lance_diamond"/>
+		<lancesteel id="spartanweaponry:lance_steel"/>
+		<lanceiron id="spartanweaponry:lance_iron"/>
+		<lancebronze id="spartanweaponry:lance_bronze"/>
+		<lancesilver id="spartanweaponry:lance_silver"/>
+		<lancestone id="spartanweaponry:lance_stone"/>
+		<lancegold id="spartanweaponry:lance_gold"/>
+		<lancewood id="spartanweaponry:lance_wood"/>
+	</lance>
+	<rapier>
+		<rapierdiamond id="spartanweaponry:rapier_diamond"/>
+		<rapiersteel id="spartanweaponry:rapier_steel"/>
+		<rapieriron id="spartanweaponry:rapier_iron"/>
+		<rapierbronze id="spartanweaponry:rapier_bronze"/>
+		<rapiersilver id="spartanweaponry:rapier_silver"/>
+		<rapierstone id="spartanweaponry:rapier_stone"/>
+		<rapiergold id="spartanweaponry:rapier_gold"/>
+		<rapierwood id="spartanweaponry:rapier_wood"/>
+	</rapier>
+</spartanweaponry>
+*/

@@ -1,6 +1,5 @@
 #include "TextEditor.h"
 
-/*removes underscore and capitalises next letter, underscore can not be last char*/
 std::string TextEditor::CamelCase(std::string givenString)
 {
 	std::string returnString = "";
@@ -17,7 +16,6 @@ std::string TextEditor::CamelCase(std::string givenString)
 	return returnString;
 }
 
-/*everything before : is 'mod' everything else is 'name'*/
 std::vector<std::string> TextEditor::SeparateModTier(std::string givenString)
 {
 	std::vector<std::string> returnVector{ "", "" };
@@ -37,4 +35,66 @@ std::vector<std::string> TextEditor::SeparateModTier(std::string givenString)
 	}
 
 	return returnVector;
+}
+
+std::string TextEditor::GetParameterValue(std::vector<std::string> rawSet, std::string parameter)
+{
+	for (int i = 0; i < rawSet.size(); i++) {
+		if (!rawSet[i].substr(0, parameter.size()).compare(parameter)) {
+			return rawSet[i].substr(parameter.size(), rawSet[i].size() - parameter.size());
+		}
+	}
+
+	return "failedRead";
+}
+
+std::vector<std::string> TextEditor::GetVector(std::string givenString, char delimiter)
+{
+	std::vector<std::string> returnVector;
+	int elementHeaderPos = 0;
+
+	givenString = RemoveChar(givenString, ' ');
+
+	for (int currentPos = 0; currentPos < givenString.size(); currentPos++) {
+		if (givenString[currentPos] == delimiter) {
+			returnVector.push_back(givenString.substr(elementHeaderPos, currentPos - elementHeaderPos));
+			elementHeaderPos = currentPos + 1;
+		}
+	}
+
+	returnVector.push_back(givenString.substr(elementHeaderPos, givenString.size() - elementHeaderPos));
+	return returnVector;
+}
+
+std::string TextEditor::RemoveChar(std::string givenString, char ignoreChar)
+{
+	std::string returnString = "";
+
+	for (int i = 0; i < givenString.size(); i++) {
+		if (givenString[i] != ignoreChar) {
+			returnString += givenString[i];
+		}
+	}
+
+	return returnString;
+}
+
+std::vector<std::vector<int>> TextEditor::GetCategoriesPosition(std::vector<std::string>& rawFileData)
+{
+	std::vector<std::vector<int>> posVector;
+	int openPos;
+	bool isCategoryOpen = false;
+
+	for (int i = 0; i < rawFileData.size(); i++) {
+		if (!isCategoryOpen && rawFileData[i][0] == '{') {
+			openPos = i + 1;
+			isCategoryOpen = true;
+		}
+		if (isCategoryOpen && rawFileData[i][0] == '}') {
+			posVector.push_back(std::vector<int>{openPos, i - 1});
+			isCategoryOpen = false;
+		}
+	}
+
+	return posVector;
 }
