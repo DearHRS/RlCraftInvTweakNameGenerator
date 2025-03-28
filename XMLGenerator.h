@@ -14,6 +14,8 @@ class XMLGenerator
 
 private:
 	std::vector<Category> categories;
+	//you were making 2 separate functions that deal with the fact that tiers can be present or not
+	std::string Generate(std::string currentMod, std::string currentItem);
 
 public:
 	XMLGenerator(std::vector<std::string> rawFileData);

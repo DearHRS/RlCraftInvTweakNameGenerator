@@ -13,11 +13,9 @@ int main()
         + get mod, 
         + get item, 
         + get tier,
-        get formula
 
     +actually generate data
     +have that data show up in file
-    run formula in xml generator
     */
 
     std::vector<std::string> rawFileData = FileReadWriter::GetFile("xmlOutput.txt");

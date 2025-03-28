@@ -131,11 +131,13 @@
     <ClCompile Include="FileReadWriter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TextEditor.cpp" />
+    <ClCompile Include="UserErrorHandler.cpp" />
     <ClCompile Include="XMLGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileReadWriter.h" />
     <ClInclude Include="TextEditor.h" />
+    <ClInclude Include="UserErrorHandler.h" />
     <ClInclude Include="XMLGenerator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,45 +5,56 @@ block on separate lines much like this example
 
 unused idea tagFormula = <'itemName''tier' id = "'mod':'itemName'_'tier'"/>
 
-this should work
-*/
-/*
+example
+
 {
-mod = SpartanFire
-items = halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier
-tiers = Fire_DragonBone, Ice_dragonbone, DragonBone, Desert_Poison, Jungle_Poison, Desert, Jungle
+mod = ExampleForUsers
+items = itemA, itemB, itemC
+tiers = Red_Epic, Green_Silly, Blue_Cold
 }
 
+
+data generated on 12:12 28 3 2025
+<ExampleForUsers>
+	<itemA>
+		<itemARedEpicEFU id="exampleforusers:itema_red_epic"/>
+		<itemAGreenSillyEFU id="exampleforusers:itema_green_silly"/>
+		<itemABlueColdEFU id="exampleforusers:itema_blue_cold"/>
+	</itemA>
+	<itemB>
+		<itemBRedEpicEFU id="exampleforusers:itemb_red_epic"/>
+		<itemBGreenSillyEFU id="exampleforusers:itemb_green_silly"/>
+		<itemBBlueColdEFU id="exampleforusers:itemb_blue_cold"/>
+	</itemB>
+	<itemC>
+		<itemCRedEpicEFU id="exampleforusers:itemc_red_epic"/>
+		<itemCGreenSillyEFU id="exampleforusers:itemc_green_silly"/>
+		<itemCBlueColdEFU id="exampleforusers:itemc_blue_cold"/>
+	</itemC>
+</ExampleForUsers>
+*/
+
+{
+mod = IceAndFire
+items = DragonBone, Stymphalian, Amphithere, Sea_Serpent
+tiers = Arrow
+}
 {
 mod = SpartanWeaponry
-items = halberd, battleaxe, hammer, warhammer, staff, pike, spear, glaive, longsword, katana, greatsword, saber, mace, dagger, lance, rapier
-tiers = Diamond, Steel, Iron, Bronze, Silver, Stone, Gold, Wood
+items = Bolt
+tiers = Diamond, Spectral,  
 }
-*/
-
 {
-mod = RoughTweaks
-items = salve, plaster, bandage, medikit, medikitenchanted
-tiers =  
+mod = SwitchBow
+items = Arrow
+tiers = LightningBolt, TNT, Frost, Air, EnderPerle, Vampier, Wither, Torch, Split, UnderWater, Love, Fire, Bone, FireWork, SplitLove, Luck, Redstone, Burial, Chorus, Sprinkler, DragonBreath, Triple, Protector, KnockBack, Bouncy, OfTheSearcher, Piercing, LightningBoltStorm, BoneAOE, SplitUpgrade, BurialAOE, FireUpgrade, LuckUpgrade, AirUpgrade, SplitLoveUpgrade
 }
 
-
-/* data generated on 16:44 25 3 2025
-<RoughTweaks>
-	<salve>
-		<salveRT id="roughtweaks:salve_"/>
-	</salve>
-	<plaster>
-		<plasterRT id="roughtweaks:plaster_"/>
-	</plaster>
-	<bandage>
-		<bandageRT id="roughtweaks:bandage_"/>
-	</bandage>
-	<medikit>
-		<medikitRT id="roughtweaks:medikit_"/>
-	</medikit>
-	<medikitenchanted>
-		<medikitenchantedRT id="roughtweaks:medikitenchanted_"/>
-	</medikitenchanted>
-</RoughTweaks>
+/* data generated on 0:48 29 3 2025
+<IceAndFire>
+	<DragonBoneArrowIAF id="iceandfire:dragonbone_arrow"/>
+	<StymphalianArrowIAF id="iceandfire:stymphalian_arrow"/>
+	<AmphithereArrowIAF id="iceandfire:amphithere_arrow"/>
+	<SeaSerpentArrowIAF id="iceandfire:sea_serpent_arrow"/>
+</IceAndFire>
 */

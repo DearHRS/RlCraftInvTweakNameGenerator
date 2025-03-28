@@ -1,7 +1,8 @@
 ﻿  XMLGenerator.cpp
+  main.cpp
   Generating code
-  18 of 458 functions ( 3.9%) were compiled, the rest were copied from previous compilation.
-    5 functions were new in current compilation
-    65 functions had inline decision re-evaluated but remain unchanged
+  8 of 467 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+    6 functions were new in current compilation
+    60 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   XMLGenerator.vcxproj -> C:\#dummy\programmingProjects\XMLGenerator\x64\Release\xmlGenerator.exe

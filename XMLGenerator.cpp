@@ -5,6 +5,7 @@ XMLGenerator::XMLGenerator(std::vector<std::string> rawFileData)
 	std::vector<std::vector<int>> categoriesPosition = TextEditor::GetCategoriesPosition(rawFileData);
 	
 	for (int a = 0; a < categoriesPosition.size(); a++) {
+		//unedited copy of lines between {} from text file
 		std::vector<std::string> rawCategory = std::vector<std::string>(
 			rawFileData.begin() + categoriesPosition[a][0],
 			rawFileData.begin() + categoriesPosition[a][1] + 1
@@ -35,10 +36,9 @@ std::vector<std::string> XMLGenerator::Generate()
 				std::string currentTier = categories[a].tiers[c];
 
 				returnVector.push_back(
-					"\t\t<" + currentItem + 
-					TextEditor::RemoveChar(currentTier, '_') + TextEditor::GetShortForm(currentMod) +
-					" id=\"" + TextEditor::GetLowerCase(currentMod) + ":" + 
-					TextEditor::GetLowerCase(currentItem) + "_" + TextEditor::GetLowerCase(currentTier) +
+					"\t\t<" + TextEditor::RemoveChar(currentItem + currentTier, '_') + 
+					TextEditor::GetShortForm(currentMod) +
+					" id=\"" + TextEditor::GetLowerCase(currentMod + ":" + currentItem + "_" + currentTier) +
 					"\"/>"
 				);
 			}
