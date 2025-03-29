@@ -1,5 +1,5 @@
 # RlCraftInvTweakNameGenerator
-some tools to fix xml file of InventoryTweak mod in RLCraft
+made a tool to generate xml entries of InventoryTweak mod in RLCraft
 
 used for bruteForce implementation of generating xml entries
 
