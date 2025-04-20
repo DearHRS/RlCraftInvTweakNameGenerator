@@ -5,22 +5,21 @@
 
 ====== [ SETTINGS ] ======
 
+C4 sleep
+D4 lockPicks
+
 D1-C1 meleeWeapon
 D2-B2 bows
 D3 tool
-D4 gtfo
+D4 crossBows
 D5-B5 heals
 D7-A6 usefulItems
-D6 foods
+D5-C6 foods
 D8-A8 block
 D9-C9 clutch
+D9 gtfo
 
-A1-A4 armour
-A1-A4 earlyGame
-A5 shield
-
-B1 earplugs
-C5 sleep
+A1-A9 baubleNStuffs
 
 ======== [ GETTING STARTED ] ========
 

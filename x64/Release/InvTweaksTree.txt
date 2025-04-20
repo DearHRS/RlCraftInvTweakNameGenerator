@@ -10,11 +10,28 @@
 # You can move/change all that you want, but it's recommended not to delete any default item.
 
 # Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
-# A: Just delete this file, the default tree will be reloaded next time you sort something!
+# A: Just delete this file, the default tree will be reloaded next time you sort something but your made changes will be gone!
 
 # CREDITS TO
 # DearHRS
 # Larandar & Lunaqua for their contributions.
+
+#rules
+C4 sleep
+D4 lockPicks
+
+D1-C1 meleeWeapon
+D2-B2 bows
+D3 tool
+D4 crossBows
+D5-B5 heals
+D7-A6 usefulItems
+D5-C6 foods
+D8-A8 block
+D9-C9 clutch
+D9 gtfo
+
+A1-A9 baubleNStuffs
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
@@ -386,7 +403,32 @@
 				</axe>
 			</vanillaMelee>
 		</meleeWeapon>
-		<rangedWeapons>
+		<rangedWeapons>			
+			<crossBows>
+				<spartanCrossbow>
+					<crossbowFireDragonbone id="spartanfire:crossbow_fire_dragonbone"/>
+					<crossbowIceDragonbone id="spartanfire:crossbow_ice_dragonbone"/>
+					<crossbowDragonbone id="spartanfire:crossbow_dragonbone"/>
+					<crossbowDiamond id="spartanweaponry:crossbow_diamond"/>
+					<crossbowSteel id="spartanweaponry:crossbow_steel"/>
+					<crossbowIron id="spartanweaponry:crossbow_iron"/>
+					<crossbowUmbrium id="spartandefiled:crossbow_umbrium"/>
+					<crossbowBronze id="spartanweaponry:crossbow_bronze"/>
+					<crossbowSilver id="spartanweaponry:crossbow_silver"/>
+					<crossbowStone id="spartanweaponry:crossbow_stone"/>
+					<crossbowGold id="spartanweaponry:crossbow_gold"/>
+					<crossbowWood id="spartanweaponry:crossbow_wood"/>
+					<crossbowDesertVenom id="spartanfire:crossbow_desert_venom"/>
+					<crossbowJungleVenom id="spartanfire:crossbow_jungle_venom"/>
+					<crossbowDesert id="spartanfire:crossbow_desert"/>
+					<crossbowJungle id="spartanfire:crossbow_jungle"/>
+				</spartanCrossbow>				
+				<bolts>
+					<boltDiamond id="spartanweaponry:bolt_diamond"/>
+					<boltSpectral id="spartanweaponry:bolt_spectral"/>
+					<bolt id="spartanweaponry:bolt"/>
+				</bolts>
+			</crossBows>
 			<bows>
 				<longbow>
 					<longbowFireDragonbone id="spartanfire:longbow_fire_dragonbone"/>
@@ -462,31 +504,6 @@
 					<arrow id="minecraft:arrow"/>
 				</vanillaArrows>
 			</bows>			
-			<crossBows>
-				<spartanCrossbow>
-					<crossbowFireDragonbone id="spartanfire:crossbow_fire_dragonbone"/>
-					<crossbowIceDragonbone id="spartanfire:crossbow_ice_dragonbone"/>
-					<crossbowDragonbone id="spartanfire:crossbow_dragonbone"/>
-					<crossbowDiamond id="spartanweaponry:crossbow_diamond"/>
-					<crossbowSteel id="spartanweaponry:crossbow_steel"/>
-					<crossbowIron id="spartanweaponry:crossbow_iron"/>
-					<crossbowUmbrium id="spartandefiled:crossbow_umbrium"/>
-					<crossbowBronze id="spartanweaponry:crossbow_bronze"/>
-					<crossbowSilver id="spartanweaponry:crossbow_silver"/>
-					<crossbowStone id="spartanweaponry:crossbow_stone"/>
-					<crossbowGold id="spartanweaponry:crossbow_gold"/>
-					<crossbowWood id="spartanweaponry:crossbow_wood"/>
-					<crossbowDesertVenom id="spartanfire:crossbow_desert_venom"/>
-					<crossbowJungleVenom id="spartanfire:crossbow_jungle_venom"/>
-					<crossbowDesert id="spartanfire:crossbow_desert"/>
-					<crossbowJungle id="spartanfire:crossbow_jungle"/>
-				</spartanCrossbow>				
-				<bolts>
-					<boltDiamond id="spartanweaponry:bolt_diamond"/>
-					<boltSpectral id="spartanweaponry:bolt_spectral"/>
-					<bolt id="spartanweaponry:bolt"/>
-				</bolts>
-			</crossBows>			
 			<throwables>
 				<throwing_axe>
 					<throwing_axeFireDragonbone id="spartanfire:throwing_axe_fire_dragonbone"/>
@@ -789,7 +806,6 @@
 					<iceLeggings id="simpledifficulty:ice_leggings"/>
 					<iceBoots id="simpledifficulty:ice_boots"/>
 				</cooling>
-				<earplugs id="iceandfire:earplugs"/>
 			</earlyGame>
 		</armour>
 		<heals>
@@ -809,6 +825,30 @@
 				<plasterFA id="firstaid:plaster"/>
 				<morphineFA id="firstaid:morphine"/>
 			</firstaid>
+			<healIngredients>
+				<wool>
+					<whiteWool id="wool" damage="0"/>
+					<orangeWool id="wool" damage="1"/>
+					<magentaWool id="wool" damage="2"/>
+					<lightBlueWool id="wool" damage="3"/>
+					<yellowWool id="wool" damage="4"/>
+					<lightGreenWool id="wool" damage="5"/>
+					<limeWool id="wool" damage="5"/>
+					<pinkWool id="wool" damage="6"/>
+					<grayWool id="wool" damage="7"/>
+					<lightGrayWool id="wool" damage="8"/>
+					<cyanWool id="wool" damage="9"/>
+					<purpleWool id="wool" damage="10"/>
+					<blueWool id="wool" damage="11"/>
+					<brownWool id="wool" damage="12"/>
+					<greenWool id="wool" damage="13"/>
+					<darkGreenWool id="wool" damage="13"/>
+					<redWool id="wool" damage="14"/>
+					<blackWool id="wool" damage="15"/>
+				</wool>
+				<string id="minecraft:string"/>
+				<cobweb id="minecraft:web"/>
+			</healIngredients>
 		</heals>
 		<clutch>
 			<enderPearl id="minecraft:ender_pearl"/>
@@ -823,12 +863,27 @@
 			<lapisLazuli id="minecraft:dye" damage="4"/>
 		</enchanting>
 		<gtfo>
+			<warpScroll id="waystones:warp_scroll"/>
 			<magicMirror id="bountifulbaubles:magicmirror"/>
 			<recallPotion id="bountifulbaubles:potionrecall"/>
-			<warpScroll id="waystones:warp_scroll"/>
 		</gtfo>
 		<foods>
 			<cookedFoods>
+				<topTier>
+					<CookedAspidMeatLM id="lycanitesmobs:cooked_aspid_meat"/>
+					<CookedArisaurMeatLM id="lycanitesmobs:cooked_arisaur_meat"/>
+					<CookedMakaMeatLM id="lycanitesmobs:cooked_maka_meat"/>
+					<CookedBobekoMeatLM id="lycanitesmobs:cooked_bobeko_meat"/>
+					<CookedChupacabaraMeatLM id="lycanitesmobs:cooked_chupacabara_meat"/>
+					<CookedIkaMeatLM id="lycanitesmobs:cooked_ika_meat"/>
+					<CookedYaleMeatLM id="lycanitesmobs:cooked_yale_meat"/>
+					<CookedJousteMeatLM id="lycanitesmobs:cooked_joust_meat"/>
+					<CookedSilexMeatLM id="lycanitesmobs:cooked_silex_meat"/>
+					<CookedCephignisMeatLM id="lycanitesmobs:cooked_cephignis_meat"/>
+					<CookedConcapedeMeatLM id="lycanitesmobs:cooked_concapede_meat"/>
+					<CookedPinkyMeatLM id="lycanitesmobs:cooked_pinky_meat"/>
+					<CookedKrakeMeatLM id="lycanitesmobs:cooked_krake_meat"/>
+				</topTier>
 				<cookedPorkchop id="cooked_porkchop"/>
 				<cookedFish id="cooked_fish" damage="0"/>
 				<cookedSalmon id="cooked_fish" damage="1"/>
@@ -855,7 +910,20 @@
 				<ironBerries id="rustic:ironberries"/>
 			</berries>
 			<badFood>
-				<rottenFlesh id="minecraft:rotten_flesh"/>				
+				<rottenFlesh id="minecraft:rotten_flesh"/>
+				<RawAspidMeatLM id="lycanitesmobs:raw_aspid_meat"/>
+				<RawArisaurMeatLM id="lycanitesmobs:raw_arisaur_meat"/>
+				<RawMakaMeatLM id="lycanitesmobs:raw_maka_meat"/>
+				<RawBobekoMeatLM id="lycanitesmobs:raw_bobeko_meat"/>
+				<RawChupacabaraMeatLM id="lycanitesmobs:raw_chupacabara_meat"/>
+				<RawIkaMeatLM id="lycanitesmobs:raw_ika_meat"/>
+				<RawYaleMeatLM id="lycanitesmobs:raw_yale_meat"/>
+				<RawJousteMeatLM id="lycanitesmobs:raw_jouste_meat"/>
+				<RawSilexMeatLM id="lycanitesmobs:raw_silex_meat"/>
+				<RawCephignisMeatLM id="lycanitesmobs:raw_cephignis_meat"/>
+				<RawConcapedeMeatLM id="lycanitesmobs:raw_concapede_meat"/>
+				<RawPinkyMeatLM id="lycanitesmobs:raw_pinky_meat"/>
+				<RawKrakeMeatLM id="lycanitesmobs:raw_krake_meat"/>
 			</badFood>
 			<glassBottle id="glass_bottle"/>
 		</foods>
@@ -864,14 +932,7 @@
 			<bed id="minecraft:bed"/>
 		</sleep>
 		<usefulItems>
-			<grapplingHook id="grapplemod:grapplinghook"/>
-			<atlas id="antiqueatlas:antique_atlas"/>
-			<xpTome id="xpbook:xp_book"/>
-            <bottleOEnchanting id="experience_bottle"/>
-			<torch id="torch"/>
-            <craftingTable id="crafting_table"/>
-			<storage>
-				<enderChest id="ender_chest"/>
+			<storageExpanders>
 				<shulkerBoxes>
 					<whiteShulkerBox id="minecraft:white_shulker_box"/>
 					<pinkShulkerBox id="minecraft:pink_shulker_box"/>
@@ -890,11 +951,65 @@
 					<grayShulkerBox id="minecraft:gray_shulker_box"/>
 					<blackShulkerBox id="minecraft:black_shulker_box"/>
 				</shulkerBoxes>
+				<charmCrates id="charm:crate"/>
+			</storageExpanders>
+			<lockPicks>
+				<DiamondLockPickLS id="locks:diamond_lock_pick"/>
+				<SteelLockPickLS id="locks:steel_lock_pick"/>
+				<IronLockPickLS id="locks:iron_lock_pick"/>
+				<GoldLockPickLS id="locks:gold_lock_pick"/>
+				<WoodLockPickLS id="locks:wood_lock_pick"/>
+			</lockPicks>
+			<xpTome id="xpbook:xp_book"/>
+            <bottleOEnchanting id="experience_bottle"/>
+			<grapplingHook id="grapplemod:grapplinghook"/>
+			<atlas id="antiqueatlas:antique_atlas"/>
+			<torch id="torch"/>
+            <craftingTable id="crafting_table"/>
+			<storagePlaceables>
+				<enderChest id="ender_chest"/>
+				<bigCrate id=""/>
 				<chest id="minecraft:chest"/>
-			</storage>
+				<barrels id="minecraft:barrel"/>
+			</storagePlaceables>
 			<bookAndQuill id="writable_book"/>
             <flintAndSteel id="flint_and_steel"/>
 		</usefulItems>
+		<baubleNStuffs>
+			<head>
+				<dragonsEyeXAT id="xat:dragons_eye"/>
+				<earplugs id="iceandfire:earplugs"/>
+			</head>
+			<amulet>
+				<crossNecklaceBB id="bountifulbaubles:amuletcross"/>
+				<seaStoneXAT id="xat:sea_stone"/>
+			</amulet>
+			<rings>
+				<fireGuantletA id="artifacts:fire_guantlet"/>
+				<witherRingXAT id="xat:wither_ring"/>
+				<potionRingPF id="potionfingers:ring"/>
+				<freeActionRingBB id="bountifulbaubles:ringfreeaction"/>
+			</rings>
+			<body>
+				<backpackWB id="wearablebackpacks:backpack"/>
+			</body>
+			<belt>
+				<toolBeltTB id="toolbelt:belt"/>
+			</belt>
+			<any>
+				<poisonStoneXAT id="xat:poison_stone"/>
+				<bezoarBB id="bountifulbaubles:trinketbezoar"/>
+			</any>
+			
+			<lockPicks>
+				<masterKeyL id="locks:master_key"/>
+				<DiamondLockPickL id="locks:diamond_lock_pick"/>
+				<SteelLockPickL id="locks:steel_lock_pick"/>
+				<IronLockPickL id="locks:iron_lock_pick"/>
+				<GoldLockPickL id="locks:gold_lock_pick"/>
+				<WoodLockPickL id="locks:wood_lock_pick"/>
+			</lockPicks>
+		</baubleNStuffs>
 		<tamingStuff>
 			<soulGazer id="lycanitesmobs:soulgazer"/>
 			<avianTreat id="lycanitesmobs:aviantreat"/>
@@ -919,48 +1034,107 @@
 			<reptileTreat id="lycanitesmobs:reptiletreat"/>
 		</tamingStuff>
 	</custom>
-
-    <equipment>
-        <tool>
-            <pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}">
-                <diamondPickaxe id="diamond_pickaxe"/>
-                <goldPickaxe id="golden_pickaxe"/>
-                <ironPickaxe id="iron_pickaxe"/>
-                <stonePickaxe id="stone_pickaxe"/>
-                <woodPickaxe id="wooden_pickaxe"/>
-            </pickaxe>
-            <shovel class="Item" data="{ToolClass : &quot;shovel&quot;}">
-                <goldShovel id="golden_shovel"/>
-                <diamondShovel id="diamond_shovel"/>
-                <ironShovel id="iron_shovel"/>
-                <stoneShovel id="stone_shovel"/>
-                <woodShovel id="wooden_shovel"/>
-            </shovel>
-            <axe class="Item" data="{ToolClass : &quot;axe&quot;}">
-                <goldAxe id="golden_axe"/>
-                <diamondAxe id="diamond_axe"/>
-                <ironAxe id="iron_axe"/>
-                <stoneAxe id="stone_axe"/>
-                <woodAxe id="wooden_axe"/>
-            </axe>
-            <hoe class="Item" data="{ToolClass : &quot;hoe&quot;}">
-                <hoe class="ItemHoe" mergePrevious="true"/>
-                <goldHoe id="golden_hoe"/>
-                <diamondHoe id="diamond_hoe"/>
-                <ironHoe id="stone_hoe"/>
-                <stoneHoe id="iron_hoe"/>
-                <woodHoe id="wooden_hoe"/>
-            </hoe>
-            <shears class="Item" data="{ToolClass : &quot;shears&quot;}">
-                <ironShears id="minecraft:shears" mergePrevious="true"/>
-                <shears class="ItemShears" mergePrevious="true"/>
-            </shears>
-            <fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
-                <fishingRod id="fishing_rod"/>
-            </fishingRod>
-            <carrotOnAStick id="carrot_on_a_stick"/>
-        </tool>
-    </equipment>
+	<tool>
+		<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}">
+			<diamondPickaxe id="diamond_pickaxe"/>
+			<goldPickaxe id="golden_pickaxe"/>
+			<ironPickaxe id="iron_pickaxe"/>
+			<stonePickaxe id="stone_pickaxe"/>
+			<woodPickaxe id="wooden_pickaxe"/>
+		</pickaxe>
+		<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}">
+			<goldShovel id="golden_shovel"/>
+			<diamondShovel id="diamond_shovel"/>
+			<ironShovel id="iron_shovel"/>
+			<stoneShovel id="stone_shovel"/>
+			<woodShovel id="wooden_shovel"/>
+		</shovel>
+		<axe class="Item" data="{ToolClass : &quot;axe&quot;}">
+			<goldAxe id="golden_axe"/>
+			<diamondAxe id="diamond_axe"/>
+			<ironAxe id="iron_axe"/>
+			<stoneAxe id="stone_axe"/>
+			<woodAxe id="wooden_axe"/>
+		</axe>
+		<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}">
+			<hoe class="ItemHoe" mergePrevious="true"/>
+			<goldHoe id="golden_hoe"/>
+			<diamondHoe id="diamond_hoe"/>
+			<ironHoe id="stone_hoe"/>
+			<stoneHoe id="iron_hoe"/>
+			<woodHoe id="wooden_hoe"/>
+		</hoe>
+		<ironShears id="minecraft:shears"/>
+	</tool>
+	<resources>
+		<ores>
+			<GlowingGemXAT id="xat:glowing_gem"/>
+			<GlowingIngotXAT id="xat:glowing_ingot"/>
+			<GlowingPowderXAT id="xat:glowing_powder"/>
+			
+			<DiamondBlockMC id="minecraft:diamond_block"/>
+			<DiamondMC id="minecraft:diamond"/>
+			<DiamondNuggetMC id="minecraft:diamond_nugget"/>
+			<DiamondOreMC id="minecraft:diamond_ore"/>
+			
+			<EmeraldBlockMC id="minecraft:emerald_block"/>
+			<EmeraldMC id="minecraft:emerald"/>
+			<EmeraldOreMC id="minecraft:emerald_ore"/>
+			
+			<SilverBlockIAF id="iceandfire:silver_block"/>
+			<SilverIngotIAF id="iceandfire:silver_ingot"/>
+			<SilverNuggetIAF id="iceandfire:silver_nugget"/>
+			<SilverOreIAF id="iceandfire:silver_ore"/>
+			
+			<GoldBlockMC id="minecraft:gold_block"/>
+			<GoldIngotMC id="minecraft:gold_ingot"/>
+			<GoldNuggetMC id="minecraft:gold_nugget"/>
+			<GoldOreMC id="minecraft:gold_ore"/>
+			
+			<IronBlockMC id="minecraft:iron_block"/>
+			<IronIngotMC id="minecraft:iron_ingot"/>
+			<IronNuggetMC id="minecraft:iron_nugget"/>
+			<IronOreMC id="minecraft:iron_ore"/>
+			
+			<ScarliteBlockDL id="defiledlands:scarlite_block"/>
+			<ScarliteDL id="defiledlands:scarlite"/>
+			
+			<UmbriumBlockDL id="defiledlands:umbrium_block"/>
+			<UmbriumIngotDL id="defiledlands:umbrium_ingot"/>
+			<UmbriumNuggetDL id="defiledlands:umbrium_nugget"/>
+			<UmbriumOreDL id="defiledlands:umbrium_ore"/>
+			<DefilementPowderDL id="defiledlands:defilement_powder"/>
+			
+			<RedstoneBlockMC id="minecraft:redstone_block"/>
+			<RedstoneMC id="minecraft:redstone"/>
+			<RedstoneOreMC id="minecraft:redstone_ore"/>
+			
+			<CoalBlockMC id="minecraft:coal_block"/>
+			<CoaltMC id="minecraft:coal"/>
+			<CoalOreMC id="minecraft:coal_ore"/>
+			
+			<glowstoneBlockMC id="minecraft:glowstone_block"/>
+			<glowstoneDust id="glowstone_dust"/>
+			<flint id="flint"/>
+			<netherQuartz id="quartz"/>
+		</ores>
+		<huntingResources>
+			<blazeRod id="blaze_rod"/>
+			<blazePowder id="blaze_powder"/>
+			<ghastTear id="ghast_tear"/>
+			<netherStar id="nether_star"/>
+			<shulkerShell id="shulker_shell"/>
+			<totemOfUndying id="totem_of_undying"/>
+			<gunpowder id="gunpowder"/>
+			<slimeBlock id="slime"/>
+			<slimeball id="slime_ball"/>
+			<bone id="bone"/>
+			<leather id="leather"/>
+			<feather id="feather"/>
+			<prismarineCrystals id="prismarine_crystals"/>
+			<prismarineShard id="prismarine_shard"/>
+		</huntingResources>
+	</resources>
     <block>
         <naturalBlock>
             <dirts>
@@ -995,14 +1169,9 @@
                     <darkPrismarine id="prismarine" damage="2"/>
                 </prismarine>
                 <purpurBlock id="purpur_block"/>
+				<clayBrick id="brick"/>
+				<clay id="clay_ball"/>
             </stones>
-            <oreBlock>
-                <coalOreBlock id="coal_ore"/>
-                <redstoneOreBlock id="redstone_ore"/>
-                <lapisLazuliOreBlock id="lapis_ore"/>
-                <diamondOreBlock id="diamond_ore"/>
-                <emeraldOreBlock id="emerald_ore"/>
-            </oreBlock>
             <wood>
                 <oakWood id="log" damage="0"/>
                 <birchWood id="log" damage="1"/>
@@ -1034,7 +1203,6 @@
                 <soulSand id="soul_sand"/>
                 <quartzOreBlock id="quartz_ore"/>
             </netherBlock>
-            <cobweb id="web"/>
             <monsterSpawner id="mob_spawner"/>
             <sponge>
                 <drySponge id="sponge" damage="0"/>
@@ -1043,17 +1211,12 @@
             <grass id="grass"/>
             <grassPath id="grass_path"/>
             <mycelium id="mycelium"/>
-            <mushroomGrass id="mycelium"/>
             <farmland id="farmland"/>
             <snow id="snow"/>
             <ice id="ice"/>
             <frostedIce id="frosted_ice"/>
             <packedIce id="packed_ice"/>
-            <endPortal id="end_portal"/>
-            <endGateway id="end_gateway"/>
-            <endPortalFrame id="end_portal_frame"/>
             <obsidian id="obsidian"/>
-            <portal id="portal"/>
             <mushroomBlock>
                 <hugeBrownMushroom id="brown_mushroom_block"/>
                 <hugeRedMushroom id="red_mushroom_block"/>
@@ -1073,26 +1236,6 @@
 				<rockBasalt id="notreepunching:rock/basalt"/>
 			</rocks>
         </naturalBlock>
-        <wool>
-            <whiteWool id="wool" damage="0"/>
-            <orangeWool id="wool" damage="1"/>
-            <magentaWool id="wool" damage="2"/>
-            <lightBlueWool id="wool" damage="3"/>
-            <yellowWool id="wool" damage="4"/>
-            <lightGreenWool id="wool" damage="5"/>
-            <limeWool id="wool" damage="5"/>
-            <pinkWool id="wool" damage="6"/>
-            <grayWool id="wool" damage="7"/>
-            <lightGrayWool id="wool" damage="8"/>
-            <cyanWool id="wool" damage="9"/>
-            <purpleWool id="wool" damage="10"/>
-            <blueWool id="wool" damage="11"/>
-            <brownWool id="wool" damage="12"/>
-            <greenWool id="wool" damage="13"/>
-            <darkGreenWool id="wool" damage="13"/>
-            <redWool id="wool" damage="14"/>
-            <blackWool id="wool" damage="15"/>
-        </wool>
         <manufacturedBlock>
             <ladder id="ladder"/>
             <fence>
@@ -1247,49 +1390,49 @@
                 <glass>
                     <glassBlock id="glass"/>
                     <glassPane id="glass_pane"/>
+					<stainedGlass>
+						<stainedGlassBlock id="stained_glass">
+							<whiteStainedGlassBlock id="stained_glass" damage="0"/>
+							<orangeStainedGlassBlock id="stained_glass" damage="1"/>
+							<magentaStainedGlassBlock id="stained_glass" damage="2"/>
+							<lightBlueStainedGlassBlock id="stained_glass" damage="3"/>
+							<yellowStainedGlassBlock id="stained_glass" damage="4"/>
+							<lightGreenStainedGlassBlock id="stained_glass" damage="5"/>
+							<limeStainedGlassBlock id="stained_glass" damage="5"/>
+							<pinkStainedGlassBlock id="stained_glass" damage="6"/>
+							<grayStainedGlassBlock id="stained_glass" damage="7"/>
+							<lightGrayStainedGlassBlock id="stained_glass" damage="8"/>
+							<cyanStainedGlassBlock id="stained_glass" damage="9"/>
+							<purpleStainedGlassBlock id="stained_glass" damage="10"/>
+							<blueStainedGlassBlock id="stained_glass" damage="11"/>
+							<brownStainedGlassBlock id="stained_glass" damage="12"/>
+							<greenStainedGlassBlock id="stained_glass" damage="13"/>
+							<darkGreenStainedGlassBlock id="stained_glass" damage="13"/>
+							<redStainedGlassBlock id="stained_glass" damage="14"/>
+							<blackStainedGlassBlock id="stained_glass" damage="15"/>
+						</stainedGlassBlock>
+						<stainedGlassPane id="stained_glass_pane">
+							<whiteStainedGlassPane id="stained_glass_pane" damage="0"/>
+							<orangeStainedGlassPane id="stained_glass_pane" damage="1"/>
+							<magentaStainedGlassPane id="stained_glass_pane" damage="2"/>
+							<lightBlueStainedGlassPane id="stained_glass_pane" damage="3"/>
+							<yellowStainedGlassPane id="stained_glass_pane" damage="4"/>
+							<lightGreenStainedGlassPane id="stained_glass_pane" damage="5"/>
+							<limeStainedGlassPane id="stained_glass_pane" damage="5"/>
+							<pinkStainedGlassPane id="stained_glass_pane" damage="6"/>
+							<grayStainedGlassPane id="stained_glass_pane" damage="7"/>
+							<lightGrayStainedGlassPane id="stained_glass_pane" damage="8"/>
+							<cyanStainedGlassPane id="stained_glass_pane" damage="9"/>
+							<purpleStainedGlassPane id="stained_glass_pane" damage="10"/>
+							<blueStainedGlassPane id="stained_glass_pane" damage="11"/>
+							<brownStainedGlassPane id="stained_glass_pane" damage="12"/>
+							<greenStainedGlassPane id="stained_glass_pane" damage="13"/>
+							<darkGreenStainedGlassPane id="stained_glass_pane" damage="13"/>
+							<redStainedGlassPane id="stained_glass_pane" damage="14"/>
+							<blackStainedGlassPane id="stained_glass_pane" damage="15"/>
+						</stainedGlassPane>
+					</stainedGlass>
                 </glass>
-                <stainedGlass>
-                    <stainedGlassBlock id="stained_glass">
-                        <whiteStainedGlassBlock id="stained_glass" damage="0"/>
-                        <orangeStainedGlassBlock id="stained_glass" damage="1"/>
-                        <magentaStainedGlassBlock id="stained_glass" damage="2"/>
-                        <lightBlueStainedGlassBlock id="stained_glass" damage="3"/>
-                        <yellowStainedGlassBlock id="stained_glass" damage="4"/>
-                        <lightGreenStainedGlassBlock id="stained_glass" damage="5"/>
-                        <limeStainedGlassBlock id="stained_glass" damage="5"/>
-                        <pinkStainedGlassBlock id="stained_glass" damage="6"/>
-                        <grayStainedGlassBlock id="stained_glass" damage="7"/>
-                        <lightGrayStainedGlassBlock id="stained_glass" damage="8"/>
-                        <cyanStainedGlassBlock id="stained_glass" damage="9"/>
-                        <purpleStainedGlassBlock id="stained_glass" damage="10"/>
-                        <blueStainedGlassBlock id="stained_glass" damage="11"/>
-                        <brownStainedGlassBlock id="stained_glass" damage="12"/>
-                        <greenStainedGlassBlock id="stained_glass" damage="13"/>
-                        <darkGreenStainedGlassBlock id="stained_glass" damage="13"/>
-                        <redStainedGlassBlock id="stained_glass" damage="14"/>
-                        <blackStainedGlassBlock id="stained_glass" damage="15"/>
-                    </stainedGlassBlock>
-                    <stainedGlassPane id="stained_glass_pane">
-                        <whiteStainedGlassPane id="stained_glass_pane" damage="0"/>
-                        <orangeStainedGlassPane id="stained_glass_pane" damage="1"/>
-                        <magentaStainedGlassPane id="stained_glass_pane" damage="2"/>
-                        <lightBlueStainedGlassPane id="stained_glass_pane" damage="3"/>
-                        <yellowStainedGlassPane id="stained_glass_pane" damage="4"/>
-                        <lightGreenStainedGlassPane id="stained_glass_pane" damage="5"/>
-                        <limeStainedGlassPane id="stained_glass_pane" damage="5"/>
-                        <pinkStainedGlassPane id="stained_glass_pane" damage="6"/>
-                        <grayStainedGlassPane id="stained_glass_pane" damage="7"/>
-                        <lightGrayStainedGlassPane id="stained_glass_pane" damage="8"/>
-                        <cyanStainedGlassPane id="stained_glass_pane" damage="9"/>
-                        <purpleStainedGlassPane id="stained_glass_pane" damage="10"/>
-                        <blueStainedGlassPane id="stained_glass_pane" damage="11"/>
-                        <brownStainedGlassPane id="stained_glass_pane" damage="12"/>
-                        <greenStainedGlassPane id="stained_glass_pane" damage="13"/>
-                        <darkGreenStainedGlassPane id="stained_glass_pane" damage="13"/>
-                        <redStainedGlassPane id="stained_glass_pane" damage="14"/>
-                        <blackStainedGlassPane id="stained_glass_pane" damage="15"/>
-                    </stainedGlassPane>
-                </stainedGlass>
                 <ironBars id="iron_bars"/>
                 <stairs>
                     <woodenStairs>
@@ -1348,16 +1491,6 @@
                         <purpurDoubleSlab id="purpur_double_slab"/>
                     </doubleSlab>
                 </slabs>
-                <oreBlock>
-                    <coalBlock id="coal_block"/>
-                    <ironBlock id="iron_block"/>
-                    <goldBlock id="gold_block"/>
-                    <redstoneBlock id="redstone_block"/>
-                    <lapisLazuliBlock id="lapis_block"/>
-                    <diamondBlock id="diamond_block"/>
-                    <emeraldBlock id="emerald_block"/>
-                    <quartzBlock id="quartz_block"/>
-                </oreBlock>
                 <hayBale id="hay_block"/>
                 <stick id="stick"/>
                 <purpurPillar id="purpur_pillar"/>
@@ -1370,7 +1503,40 @@
                 <wallBanner id="wall_banner"/>
             </banner>
         </manufacturedBlock>
-        <mechanism>
+        <farmingResources>
+			<milk id="milk_bucket"/>
+			<wheat id="wheat"/>
+			<paper id="paper"/>
+			<sugarCane id="reeds"/>
+			<popChorusFruit id="chorus_fruit_popped"/>
+		</farmingResources>
+		<dye>
+			<boneMeal id="dye" damage="15"/>
+			<whiteDye oreDictName="dyeWhite"/>
+			<inkSac id="dye" damage="0"/>
+			<blackDye oreDictName="dyeBlack"/>
+			<roseRed id="dye" damage="1"/>
+			<redDye oreDictName="dyeRed"/>
+			<cactusGreen id="dye" damage="2"/>
+			<greenDye oreDictName="dyeGreen"/>
+			<cocoaBeans id="dye" damage="3"/>
+			<brownDye oreDictName="dyeBrown"/>
+			<lapisLazuli id="dye" damage="4"/>
+			<lapisLazuliDye oreDictName="dyeBlue"/>
+			<blueDye oreDictName="dyeBlue"/>
+			<purpleDye oreDictName="dyePurple"/>
+			<cyanDye oreDictName="dyeCyan"/>
+			<lightGrayDye oreDictName="dyeLightGray"/>
+			<grayDye oreDictName="dyeGray"/>
+			<pinkDye oreDictName="dyePink"/>
+			<limeDye oreDictName="dyeLime"/>
+			<dandelionYellow id="dye" damage="11"/>
+			<yellowDye oreDictName="dyeYellow"/>
+			<lightBlueDye oreDictName="dyeLightBlue"/>
+			<magentaDye oreDictName="dyeMagenta"/>
+			<orangeDye oreDictName="dyeOrange"/>
+		</dye>
+		<mechanism>
             <rails>
                 <simpleRails id="rail"/>
                 <poweredRails id="golden_rail"/>
@@ -1411,7 +1577,6 @@
                     <ironTrapdoor id="iron_trapdoor"/>
                 </trapdoor>
             </doors>
-            <redstoneWire id="redstone_wire"/>
             <redstoneTorch id="redstone_torch"/>
             <redstoneRepeater id="repeater"/>
             <dispenser id="dispenser"/>
@@ -1423,109 +1588,11 @@
             </commandBlocks>
             <observer id="observer"/>
             <daylightSensor id="daylight_detector"/>
-            <redstoneBlock id="redstone_block"/>
             <hopper id="hopper"/>
             <dropper id="dropper"/>
             <redstoneComparator id="comparator"/>
-            <slimeBlock id="slime"/>
-            <barrier id="barrier"/>
-            <structureBlock id="structure_block"/>
-            <structureVoid id="structure_void"/>
         </mechanism>
     </block>
-    <resources>
-        <miningResources>
-            <goldOreBlock id="gold_ore"/>
-            <goldOreBlockDict oreDictName="oreGold"/>
-            <silverOreBlockDict oreDictName="oreSilver"/>
-            <leadOreBlockDict oreDictName="oreLead"/>
-            <ironOreBlock id="iron_ore"/>
-            <ironOreBlockDict oreDictName="oreIron"/>
-            <copperOreBlockDict oreDictName="oreCopper"/>
-            <tinOreBlockDict oreDictName="oreTin"/>
-            <goldDustDict oreDictName="dustGold"/>
-            <silverDustDict oreDictName="dustSilver"/>
-            <leadDustDict oreDictName="dustLead"/>
-            <bronzeDustDict oreDictName="dustBronze"/>
-            <brassDustDict oreDictName="dustBrass"/>
-            <ironDustDict oreDictName="dustIron"/>
-            <tinDustDict oreDictName="dustTin"/>
-            <copperDustDict oreDictName="dustCopper"/>
-            <coal id="coal" damage="0"/>
-            <charcoal id="coal" damage="1"/>
-            <gold id="gold_ingot"/>
-            <goldDict oreDictName="ingotGold"/>
-            <silverDict oreDictName="ingotSilver"/>
-            <leadDict oreDictName="ingotLead"/>
-            <bronzeDict oreDictName="ingotBronze"/>
-            <brassDict oreDictName="ingotBrass"/>
-            <iron id="iron_ingot"/>
-            <ironDict oreDictName="ingotIron"/>
-            <tinDict oreDictName="ingotTin"/>
-            <copperDict oreDictName="ingotCopper"/>
-            <diamond id="diamond"/>
-            <emerald id="emerald"/>
-            <redstone id="redstone"/>
-            <glowstoneDust id="glowstone_dust"/>
-            <clayBrick id="brick"/>
-            <clay id="clay_ball"/>
-            <flint id="flint"/>
-            <netherQuartz id="quartz"/>
-        </miningResources>
-        <huntingResources>
-            <egg id="egg"/>
-            <bone id="bone"/>
-            <leather id="leather"/>
-            <rabbitHide id="rabbit_hide"/>
-            <string id="string"/>
-            <feather id="feather"/>
-            <gunpowder id="gunpowder"/>
-            <slimeball id="slime_ball"/>
-            <enderPearl id="ender_pearl"/>
-            <blazeRod id="blaze_rod"/>
-            <ghastTear id="ghast_tear"/>
-            <ironNugget id="iron_nugget"/>
-            <goldNugget id="gold_nugget"/>
-            <netherStar id="nether_star"/>
-            <prismarineCrystals id="prismarine_crystals"/>
-            <prismarineShard id="prismarine_shard"/>
-            <shulkerShell id="shulker_shell"/>
-            <totemOfUndying id="totem_of_undying"/>
-        </huntingResources>
-        <farmingResources>
-            <milk id="milk_bucket"/>
-            <wheat id="wheat"/>
-            <paper id="paper"/>
-            <sugarCane id="reeds"/>
-            <popChorusFruit id="chorus_fruit_popped"/>
-        </farmingResources>
-        <dye>
-            <boneMeal id="dye" damage="15"/>
-            <whiteDye oreDictName="dyeWhite"/>
-            <inkSac id="dye" damage="0"/>
-            <blackDye oreDictName="dyeBlack"/>
-            <roseRed id="dye" damage="1"/>
-            <redDye oreDictName="dyeRed"/>
-            <cactusGreen id="dye" damage="2"/>
-            <greenDye oreDictName="dyeGreen"/>
-            <cocoaBeans id="dye" damage="3"/>
-            <brownDye oreDictName="dyeBrown"/>
-            <lapisLazuli id="dye" damage="4"/>
-            <lapisLazuliDye oreDictName="dyeBlue"/>
-            <blueDye oreDictName="dyeBlue"/>
-            <purpleDye oreDictName="dyePurple"/>
-            <cyanDye oreDictName="dyeCyan"/>
-            <lightGrayDye oreDictName="dyeLightGray"/>
-            <grayDye oreDictName="dyeGray"/>
-            <pinkDye oreDictName="dyePink"/>
-            <limeDye oreDictName="dyeLime"/>
-            <dandelionYellow id="dye" damage="11"/>
-            <yellowDye oreDictName="dyeYellow"/>
-            <lightBlueDye oreDictName="dyeLightBlue"/>
-            <magentaDye oreDictName="dyeMagenta"/>
-            <orangeDye oreDictName="dyeOrange"/>
-        </dye>
-    </resources>
     <item>
         <utility>
             <endRod id="end_rod"/>
@@ -1546,7 +1613,6 @@
                 <goldHorseArmor id="golden_horse_armor"/>
                 <diamondHorseArmor id="diamond_horse_armor"/>
             </horseArmor>
-            <knoweldgeBook id="knowledge_book"/>
         </utility>
         <bucket>
             <emptyBucket id="bucket"/>
@@ -1931,13 +1997,10 @@
         <potionIngredient>
             <dragonsBreath id="dragon_breath"/>
             <netherWart id="nether_wart"/>
-            <redstone id="redstone"/>
-            <glowstoneDust id="glowstone_dust"/>
             <sugar id="sugar"/>
             <ghastTear id="ghast_tear"/>
             <spiderEye id="spider_eye"/>
             <fermentedSpiderEye id="fermented_spider_eye"/>
-            <blazePowder id="blaze_powder"/>
             <magmaCream id="magma_cream"/>
             <glisteringMelon id="speckled_melon"/>
             <rabbitFoot id="rabbit_foot"/>
