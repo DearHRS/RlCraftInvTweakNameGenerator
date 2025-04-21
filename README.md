@@ -4,8 +4,8 @@ made a tool to generate xml entries of InventoryTweak mod in RLCraft
 used for bruteForce implementation of generating xml entries
 
 working on:
-generating xml entries without tiers
-user error handling
+1. generating xml entries without tiers
+1. user error handling
 
 
 program can already generate xml enteries with their own categories (mod name), sub categories (item name) and item tags
