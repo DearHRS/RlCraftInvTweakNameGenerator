@@ -12,7 +12,7 @@ program can already generate xml enteries with their own categories (mod name), 
 everything inside /**/ is completely ignored by program
 everything inside of {} is used to generate xml entries
 
-<p>
+```
 example:
 {
 mod = ExampleForUsers
@@ -40,4 +40,4 @@ will generate:
 	</itemC>
 </ExampleForUsers>
 */
-</p>
+```
