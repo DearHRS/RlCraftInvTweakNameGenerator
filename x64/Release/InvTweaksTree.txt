@@ -857,6 +857,7 @@ A1-A9 baubleNStuffs
 		<enchanting>
 			<anvil id="anvil"/>
 			<enchantedBook id="enchanted_book"/>
+			<ancientTome id="quark:ancient_tome"/>
 			<enchantmentTable id="enchanting_table"/>
 			<disenchantingTable id="disenchanter:disenchantmenttable"/>
 			<lapisBlock id="minecraft:lapis_block"/>
@@ -981,11 +982,12 @@ A1-A9 baubleNStuffs
 				<earplugs id="iceandfire:earplugs"/>
 			</head>
 			<amulet>
+				<crossNecklaceBB id="bountifulbaubles:amuletsinwrath"/>
 				<crossNecklaceBB id="bountifulbaubles:amuletcross"/>
 				<seaStoneXAT id="xat:sea_stone"/>
 			</amulet>
 			<rings>
-				<fireGuantletA id="artifacts:fire_guantlet"/>
+				<fireGuantletA id="artifacts:fire_gauntlet"/>
 				<witherRingXAT id="xat:wither_ring"/>
 				<potionRingPF id="potionfingers:ring"/>
 				<freeActionRingBB id="bountifulbaubles:ringfreeaction"/>
@@ -1134,6 +1136,39 @@ A1-A9 baubleNStuffs
 			<prismarineCrystals id="prismarine_crystals"/>
 			<prismarineShard id="prismarine_shard"/>
 		</huntingResources>
+		<farmingResources>
+			<milk id="milk_bucket"/>
+			<wheat id="wheat"/>
+			<paper id="paper"/>
+			<sugarCane id="reeds"/>
+			<popChorusFruit id="chorus_fruit_popped"/>
+		</farmingResources>
+		<dye>
+			<boneMeal id="dye" damage="15"/>
+			<whiteDye oreDictName="dyeWhite"/>
+			<inkSac id="dye" damage="0"/>
+			<blackDye oreDictName="dyeBlack"/>
+			<roseRed id="dye" damage="1"/>
+			<redDye oreDictName="dyeRed"/>
+			<cactusGreen id="dye" damage="2"/>
+			<greenDye oreDictName="dyeGreen"/>
+			<cocoaBeans id="dye" damage="3"/>
+			<brownDye oreDictName="dyeBrown"/>
+			<lapisLazuli id="dye" damage="4"/>
+			<lapisLazuliDye oreDictName="dyeBlue"/>
+			<blueDye oreDictName="dyeBlue"/>
+			<purpleDye oreDictName="dyePurple"/>
+			<cyanDye oreDictName="dyeCyan"/>
+			<lightGrayDye oreDictName="dyeLightGray"/>
+			<grayDye oreDictName="dyeGray"/>
+			<pinkDye oreDictName="dyePink"/>
+			<limeDye oreDictName="dyeLime"/>
+			<dandelionYellow id="dye" damage="11"/>
+			<yellowDye oreDictName="dyeYellow"/>
+			<lightBlueDye oreDictName="dyeLightBlue"/>
+			<magentaDye oreDictName="dyeMagenta"/>
+			<orangeDye oreDictName="dyeOrange"/>
+		</dye>
 	</resources>
     <block>
         <naturalBlock>
@@ -1503,39 +1538,6 @@ A1-A9 baubleNStuffs
                 <wallBanner id="wall_banner"/>
             </banner>
         </manufacturedBlock>
-        <farmingResources>
-			<milk id="milk_bucket"/>
-			<wheat id="wheat"/>
-			<paper id="paper"/>
-			<sugarCane id="reeds"/>
-			<popChorusFruit id="chorus_fruit_popped"/>
-		</farmingResources>
-		<dye>
-			<boneMeal id="dye" damage="15"/>
-			<whiteDye oreDictName="dyeWhite"/>
-			<inkSac id="dye" damage="0"/>
-			<blackDye oreDictName="dyeBlack"/>
-			<roseRed id="dye" damage="1"/>
-			<redDye oreDictName="dyeRed"/>
-			<cactusGreen id="dye" damage="2"/>
-			<greenDye oreDictName="dyeGreen"/>
-			<cocoaBeans id="dye" damage="3"/>
-			<brownDye oreDictName="dyeBrown"/>
-			<lapisLazuli id="dye" damage="4"/>
-			<lapisLazuliDye oreDictName="dyeBlue"/>
-			<blueDye oreDictName="dyeBlue"/>
-			<purpleDye oreDictName="dyePurple"/>
-			<cyanDye oreDictName="dyeCyan"/>
-			<lightGrayDye oreDictName="dyeLightGray"/>
-			<grayDye oreDictName="dyeGray"/>
-			<pinkDye oreDictName="dyePink"/>
-			<limeDye oreDictName="dyeLime"/>
-			<dandelionYellow id="dye" damage="11"/>
-			<yellowDye oreDictName="dyeYellow"/>
-			<lightBlueDye oreDictName="dyeLightBlue"/>
-			<magentaDye oreDictName="dyeMagenta"/>
-			<orangeDye oreDictName="dyeOrange"/>
-		</dye>
 		<mechanism>
             <rails>
                 <simpleRails id="rail"/>
@@ -1768,7 +1770,6 @@ A1-A9 baubleNStuffs
             <sugarCane id="reeds"/>
             <vines id="vine"/>
             <cactus id="cactus"/>
-            <reed id="reeds"/>
             <melon id="melon_block"/>
             <pumpkin id="pumpkin"/>
             <cocoa id="cocoa"/>
